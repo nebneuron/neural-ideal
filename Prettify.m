@@ -26,12 +26,12 @@ for s=1:c(1)   % for each row
     M=find(k==1);   % find the 1's
     m=size(M); 
     N=find(k==0);  % find the 0's
-    for j=1:m(2),                                %write them as 1-x_i
+    for j=1:m(2),                                %write the 1s as 1-x_i
           var = [var,' (1-x',num2str(sigma(M(j))),')'];  % with the appropriate index from sigma
     end
     
     n=size(N);
-    for i=1:n(2)                                    % write them as x_i
+    for i=1:n(2)                                    % write the 0s as x_i
 	  var = [var, ' x',num2str(sigma(N(i)))]; % with the appropriate index from sigma
     end
     D=char(D,var);
