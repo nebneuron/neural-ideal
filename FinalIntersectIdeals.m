@@ -40,8 +40,8 @@ t=0; %operation tracker
 for i=1:w
     for j=1:n
         if L0(i,j)==5   %otherwise, we get xi(1-xi)
-            I(k,:)=L0(i,:); %put the i’th row of L0 in the new ideal
-            I(k,j)=r(j);    %multiply it by the j’th monomial of r
+            I(k,:)=L0(i,:); %put the iâth row of L0 in the new ideal
+            I(k,j)=r(j);    %multiply it by the jâth monomial of r
             if k>1
                 M=0; %is it a multiple of something?
                 for l=1:k1;
@@ -67,6 +67,9 @@ Ideal = I(1:k-1,:);
 
             
            
+        
+    
+        
         
     
         
