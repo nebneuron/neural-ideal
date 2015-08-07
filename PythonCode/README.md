@@ -10,7 +10,7 @@ with entries from {0, 1, 2}. The value at index i corresponds to the factor
 of the pseudmonomial as follows:
  * 0 means x_i is a factor
  * 1 means (1-x_i) is a factor
- * 2 means the pseudomonomials does not depends on x_i
+ * 2 means the pseudomonomials does not depend on x_i
 
 # Documentation of functions
 
@@ -25,7 +25,7 @@ Takes a canonical form `CF` for some code C, and uses it to
 compute the canonical form for C without `codeword`. It does this by attempting
 to combine the indicator polynomial for `codeword` with the various polynomials
 in `CF` until no further reductions/combinations can be made. You can pass the 
-verbose parameter as true to receive output at each step in the process.
+verbose parameter as True to receive output at each step in the process.
 
 
 ##### `generating_set_to_CF(GS, verbose = False)`
@@ -34,7 +34,7 @@ Takes a generating set `GS` of pseudomonomials and computes the
 canonical form of the ideal they generate. It does so by pairwise combining
 the pseudomonomials in `GS` and removing redundancies with respect to 
 divisibility until no further reductions/combinations can be made. You can pass
-the verbose parameter as true to receive output at each step in the process.
+the verbose parameter as True to receive output at each step in the process.
 
 
 ##### `remove_redundancies(GS)`
@@ -81,7 +81,7 @@ Returns the indicator pseudomonomial for a codeword `c`.
 ##### `indicators(C)`
 
 Returns a set that contains the indicator pseudomonomials for every vector
-which is *not* in the code `C`. Recall that this is a generating set for the
+which is *not* in the code `C`. Note that this is a generating set for the
 neural ideal of `C`.
 
 
