@@ -10,7 +10,7 @@ with entries from {0, 1, 2}. The value at index i corresponds to the factor
 of the pseudmonomial as follows:
  * 0 means x_i is a factor
  * 1 means (1-x_i) is a factor
- * 2 means the pseudomonomials does not depend on x_i
+ * 2 means the pseudomonomial does not depend on x_i
 
 # Documentation of functions
 
